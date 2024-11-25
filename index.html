@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!--     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-kd.png" class="logo" alt="Kalpa Das Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi, I'm <span>Kalpa Das</span><br> from Kolkata,India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-kd.jpg" alt="Kalpa Das Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Full Stack Web Developer</p>
+                    <p> Passionate and driven software development enthusiast with a strong foundation in AI/ML. Eager
+                        to contribute my
+                        skills, creativity, and determination to the field of AI/ML. Adept at collaborating with teams,
+                        problem-solving, and
+                        leveraging emerging technologies to develop innovative solutions. Committed to continuous
+                        learning and staying
+                        updated with the latest industry trends.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI/ML</span><br>
+                                <p>Engineer</p>
+                            </li>
+                            <li><span>Web Development</span><br>
+                                <p>Web-App Development</p>
+                            </li>
+                            <li><span>App Development</span><br>
+                                <p>Building Android/iOS Apps</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 </span><br>
+                                <p>Internship in Pinacle Labs</p>
+                            </li>
+                            <li><span>2024 Smart India Hackathon</span>
+                                <p>A platform aggregating multiple Scholarships, streamlining the application and
+                                    disbursement process using AI driven technology</p>
+                            </li>
+                            <li><span>2024 Smart Bengal Hackathon</span>
+                                <p>Automated Cricket Highlight Generation System using Deep Learning</p>
+                            </li>
+                            <li><span>2023 Smart India Hackathon</span>
+                                <p>Cross platform App Development for Mental Heath Issues</p>
+                            </li>
+                            <li><span>2022 Tecttrix</span>
+                                <p>Well experienced in Robotrix, RCCIIT</p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2022</span><br>
+                                <p>Higher Secondary</p>
+                            </li>
+                            <li><span>2024-2026</span><br>
+                                <p>RCCIIT</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section ends -->
+
+    <!-- ----------services section starts---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Design visually appealing and user-friendly websites tailored to your needs using the latest
+                        technologies and design principles.</p>
+                    <a href="#">Learn More About This Project</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>AI / ML Development</h2>
+                    <p>Design visually appealing and user-friendly websites tailored to your needs using the latest
+                        technologies and design principles.</p>
+                    <a href="#">Learn More About This Project</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Design visually appealing and user-friendly websites tailored to your needs using the latest
+                        technologies and design principles.</p>
+                    <a href="#">Learn More About This Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------services section ends---------- -->
+
+
+    <!-- Portfolio sections starts -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Scholarship Website and disbursement platform</h3>
+                        <p>As a participant in the Smart India Hackathon 2024, I was part of a team developing a
+                            comprehensive scho
+                            larship website for India, under the mentorship of Mr. Arup Kumar Bhattacharya. This project
+                            aimed to cre
+                            ate a platform aggregating multiple scholarships, streamlining the application and
+                            disbursement processes
+                            using AI-
+                            driven scanners for automation. The website, developed with the MERN stack, also facilitated
+                            the involve
+                            ment of a financial bureau responsible for disbursing payments from the government. Our team
+                            completed
+                            60% of the project during the hackathon, significantly enhancing my skills in web
+                            development, AI imple
+                            mentation, and collaborative problem-solving.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Automated Cricket Highlight Generation System</h3>
+                        <p>As a participant in the Smart Bengal Hackathon 2024, I was part of a team developing an
+                            Automated Cricket
+                            Highlight Generation System using Deep Learning. Our project aimed to automate the process
+                            of generating
+                            cricket highlights, making it easier for spectators to follow the game without the need for
+                            human interaction.
+                            The system used computer vision and natural language processing to analyze the game footage
+                            and extract key
+                            moments, such as goals, fouls, and penalties. Our team completed 60% of the project during
+                            the hackathon,
+                            significantly enhancing my skills in deep learning, computer vision, and natural language
+                            processing.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Cross Platform App Development for Mental Heath Issues</h3>
+                        <p>As a participant in the Smart India Hackathon 2023, I was part of a team developing a
+                            cross-platform app
+                            for mental health issues. The app was designed to provide support and resources for
+                            individuals
+                            facing mental health challenges, such as anxiety, depression, and bipolar disorder. Our team
+                            completed
+                            60% of the project during the hackathon, significantly enhancing my skills in cross-platform
+                            app development.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- portfolio sections ends -->
+
+
+    <!-- contact section starts -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Message Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kalpadas599@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 62902 71947</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100085882539516" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/_kalpa_das/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kalpadas/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kalpadas599" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv-kd.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <!--<form action="https://formsubmit.co/kalpadas599@gmail.com" method="POST"> method 1 (using formsubmit) -->
+                    <form name="submit-to-google-sheet"><!-- Method 2 (using this) -->
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Kalpadas <i class="fa-solid fa-heart"></i> All Rights Reserved</p>
+        </div>
+    </div>
+
+    <!-- contact section ends -->
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function openTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        document.querySelector('.fa-bars').addEventListener('click', () => {
+            sidemenu.style.right = "0";
+        });
+
+        document.querySelector('.fa-xmark').addEventListener('click', () => {
+            sidemenu.style.right = "-200px";
+        });
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzj3RyY5Y99I9Rj676241ipH97vQ_2xRJ0GzXR7JnZKLR31e1bnB1iXnhnK9um4Sj1CYg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                /* .catch(error => console.error('Error!', error.message)) */
+                .catch((error) => {
+                    msg.innerHTML = "Failed to send message.";
+                });
+        })
+    </script>
+
+</body>
+
+</html>

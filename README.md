@@ -1,4 +1,4 @@
-Please star it and fork it
+Please star the repository and fork if you like
 
 ## Header Screenshot 
 

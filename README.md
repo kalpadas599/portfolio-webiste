@@ -1,4 +1,4 @@
-Fork and star the repository if you like it
+1. Fork and star the repository if you like it
 
 ## Header Screenshot 
 

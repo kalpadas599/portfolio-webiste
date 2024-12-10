@@ -1,4 +1,5 @@
 1. Fork and star the repository if you like it
+2. Follow me
 
 ## Header Screenshot 
 

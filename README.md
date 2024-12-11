@@ -1,5 +1,5 @@
-1. Fork and star the repository if you like it
-2. Follow me
+1. Fork and star the repository
+2. Follow me 
 
 ## Header Screenshot 
 

@@ -1,5 +1,5 @@
 1. Fork and star the repository
-2. Follow my profile
+2. Follow mE
 3. Download my CV
 
 ## Header Screenshot 

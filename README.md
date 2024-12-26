@@ -1,6 +1,6 @@
 1. Fork and star the repository
 2. Follow me
-Download my CV from the given website
+3. Download my CV from the given website
 
 ## Header Screenshot 
 

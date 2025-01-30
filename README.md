@@ -1,7 +1,7 @@
 1. Fork and star the repository
 2. Follow me
 3. Download my CV from my website
-4. Always welcome for contribution
+4.  welcome for contribution
 
     
 ## Header Screenshot 

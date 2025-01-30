@@ -2,7 +2,7 @@
 2. Follow me
 3. Download my CV from my website
 4. Always welcome for contribution
-5. 
+
     
 ## Header Screenshot 
 ![image](https://github.com/user-attachments/assets/431b545b-947f-4afa-92ee-2cd54b90a178)

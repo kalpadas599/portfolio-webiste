@@ -108,7 +108,6 @@
             </div>
         </div>
     </div>
-
     <!-- about section ends -->
 
     <!-- ----------services section starts---------- -->
@@ -143,8 +142,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- ----------services section ends---------- -->
 
 
@@ -153,7 +150,71 @@
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
+
                 <div class="work">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <h3>Live Stream Analytics Dashboard</h3>
+                        <p>A modern web application for analyzing live stream data with real-time metrics and visualizations.
+                        Features:
+                        <ul>
+                            <li>Real-time stream analytics</li>
+                            <li>Interactive dashboards</li>
+                            <li>Dark/Light mode support</li>
+                            <li>Responsive design</li>
+                            <li>Modern UI components</li>
+                        </ul>
+                        </p>
+                        <a href="https://github.com/kalpadas599/Real-time-analysis-BI" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-5.jpg">
+                    <div class="layer">
+                        <h3>Beyond QWERTY: Form Filling's Vernacular Voyage with Voice Versatility!</h3>
+                        <p><strong>Problems in Traditional Form Filling:</strong></p>
+                        <ul>
+                            <li>Time-consuming and error-prone process</li>
+                            <li>Typing difficulties for non-tech users, elderly and differently-abled individuals</li>
+                            <li>Language barriers hinder vernacular users</li>
+                        </ul>
+                        <p><strong>Our Solution:</strong></p>
+                        <ul>
+                            <li>Voice-Enabled Form Filling – Users can speak instead of typing, making the process faster and more convenient.</li>
+                            <li>AI-Powered Error Correction – NLP ensures accurate text input, reducing mistakes.</li>
+                            <li>User-Friendly Interface – Simple and intuitive UI for easy navigation.</li>
+                        </ul>
+                        <a href="https://github.com/kalpadas599/Beyond_QWERTY_Project" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/work-6.jpg">
+                    <div class="layer">
+                        <h3>Event Organising Website</h3>
+                        <p>It's a collection of services-list. It's time to enjoy! The best event planning for you and your family.
+                        Our Services Include:
+                        <ul>
+                            <li>Assistance in Venue Selection</li>
+                            <li>Customizable invitation cards</li>
+                            <li>Music, performances etc. option</li>
+                            <li>Catering services available</li>
+                            <li>Cakes for special occasions</li>
+                            <li>Photo and video coverage</li>
+                        </ul>
+                        </p>
+                        <a href="https://github.com/kalpadas599/Event-Organising-website" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>   
+
+                <div class="work hidden-projects">
                     <img src="images/work-1.png">
                     <div class="layer">
                         <h3>Scholarship Website and disbursement platform</h3>
@@ -168,7 +229,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work hidden-projects">
                     <img src="images/work-2.png">
                     <div class="layer">
                         <h3>Automated Cricket Highlight Generation System</h3>
@@ -183,7 +244,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work hidden-projects">
                     <img src="images/work-3.png">
                     <div class="layer">
                         <h3>Cross-Platform App Development for Mental Health Issues</h3>
@@ -196,13 +257,12 @@
                         </a>
                     </div>
                 </div>
+
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="#" class="btn" id="seeMoreBtn">See more</a>
         </div>
     </div>
-
     <!-- portfolio sections ends -->
-
 
     <!-- contact section starts -->
     <div id="contact">
@@ -236,7 +296,6 @@
             <p>Copyright © Kalpadas <i class="fa-solid fa-heart"></i> All Rights Reserved</p>
         </div>
     </div>
-
     <!-- contact section ends -->
 
 
@@ -289,6 +348,26 @@
         })
     </script>
 
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const seeMoreBtn = document.getElementById('seeMoreBtn');
+            const hiddenProjects = document.querySelectorAll('.hidden-projects');
 
+            // Hide hidden projects on page load
+            hiddenProjects.forEach(project => {
+                project.style.display = 'none';
+            });
+
+            seeMoreBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const isHidden = hiddenProjects[0].style.display === 'none' || hiddenProjects[0].style.display === '';
+                hiddenProjects.forEach(project => {
+                    project.style.display = isHidden ? 'block' : 'none';
+                });
+                seeMoreBtn.textContent = isHidden ? 'See less' : 'See more';
+            });
+        });
+    </script>
+
+</body>
 </html>

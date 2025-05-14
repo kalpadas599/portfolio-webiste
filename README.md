@@ -1,12 +1,5 @@
-1. Fork and star the repository
-2. Follow me
-3. Download my CV from my website 
-4. You can contribute 
 
+# Personal Portfolio
 
+This is the personal portfolio website of Kalpa Das, a Full Stack Web Developer and AI enthusiast. The website showcases skills, experience, services, and projects, providing an overview of professional work and contact information. It is built using HTML, CSS, and JavaScript, with a responsive design for optimal viewing on various devices.
 
-## Header Screenshot 
-![image](https://github.com/user-attachments/assets/431b545b-947f-4afa-92ee-2cd54b90a178)
-
-## Contact Screenshot 
-![Screenshot 2024-12-03 141129](https://github.com/user-attachments/assets/7d17ecc2-935b-4b2c-9e7f-05bea8faca7b)

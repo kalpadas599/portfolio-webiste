@@ -44,7 +44,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Full Stack Engineer | AI Enthusiast | Hackathon Finalist</p>
+                    <h3>Full Stack Engineer | AI Enthusiast | Hackathon Finalist</h3>
                     <p> Results-driven and innovative Full Stack Web Developer with hands-on experience in building
                         scalable applications using Java, Flask, MongoDB, and Whisper AI.
                         Recently completed an AI Internship with Infosys Springboard and was a finalist at the Smart Bengal Hackathon 2024.
@@ -59,14 +59,20 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>AI/ML</span><br>
-                                <p>Engineer</p>
-                            </li>
                             <li><span>Web Development</span><br>
-                                <p>Web-App Development</p>
+                                <p>Full Stack Development using HTML, CSS, JavaScript, Python, Flask, MERN stack</p>
+                            </li>
+                            <li><span>AI/ML</span><br>
+                                <p>Voice-enabled systems, NLP with Whisper AI, Real-time Analytics with PySpark</p>
                             </li>
                             <li><span>App Development</span><br>
-                                <p>Building Android/iOS Apps</p>
+                                <p>Cross-platform app development using Flutter and Firebase</p>
+                            </li>
+                            <li><span>Cloud & DevOps</span><br>
+                                <p>Azure (AZ-900), Docker, Git & GitHub, GitHub Actions</p>
+                            </li>
+                            <li><span>Analytics & Tools</span><br>
+                                <p>Power BI, MS Excel, MongoDB, SQLite, VS Code</p>
                             </li>
                         </ul>
                     </div>
@@ -153,7 +159,71 @@
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
+
                 <div class="work">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <h3>Live Stream Analytics Dashboard</h3>
+                        <p>A modern web application for analyzing live stream data with real-time metrics and visualizations.
+                        Features:
+                        <ul>
+                            <li>Real-time stream analytics</li>
+                            <li>Interactive dashboards</li>
+                            <li>Dark/Light mode support</li>
+                            <li>Responsive design</li>
+                            <li>Modern UI components</li>
+                        </ul>
+                        </p>
+                        <a href="https://github.com/kalpadas599/Real-time-analysis-BI" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-5.jpg">
+                    <div class="layer">
+                        <h3>Beyond QWERTY: Form Filling's Vernacular Voyage with Voice Versatility!</h3>
+                        <p><strong>Problems in Traditional Form Filling:</strong></p>
+                        <ul>
+                            <li>Time-consuming and error-prone process</li>
+                            <li>Typing difficulties for non-tech users, elderly and differently-abled individuals</li>
+                            <li>Language barriers hinder vernacular users</li>
+                        </ul>
+                        <p><strong>Our Solution:</strong></p>
+                        <ul>
+                            <li>Voice-Enabled Form Filling – Users can speak instead of typing, making the process faster and more convenient.</li>
+                            <li>AI-Powered Error Correction – NLP ensures accurate text input, reducing mistakes.</li>
+                            <li>User-Friendly Interface – Simple and intuitive UI for easy navigation.</li>
+                        </ul>
+                        <a href="https://github.com/kalpadas599/Beyond_QWERTY_Project" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/work-6.jpg">
+                    <div class="layer">
+                        <h3>Event Organising Website</h3>
+                        <p>It's a collection of services-list. It's time to enjoy! The best event planning for you and your family.
+                        Our Services Include:
+                        <ul>
+                            <li>Assistance in Venue Selection</li>
+                            <li>Customizable invitation cards</li>
+                            <li>Music, performances etc. option</li>
+                            <li>Catering services available</li>
+                            <li>Cakes for special occasions</li>
+                            <li>Photo and video coverage</li>
+                        </ul>
+                        </p>
+                        <a href="https://github.com/kalpadas599/Event-Organising-website" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                </div>   
+
+                <div class="work hidden-projects">
                     <img src="images/work-1.png">
                     <div class="layer">
                         <h3>Scholarship Website and disbursement platform</h3>
@@ -168,7 +238,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work hidden-projects">
                     <img src="images/work-2.png">
                     <div class="layer">
                         <h3>Automated Cricket Highlight Generation System</h3>
@@ -183,7 +253,7 @@
                     </div>
                 </div>
 
-                <div class="work">
+                <div class="work hidden-projects">
                     <img src="images/work-3.png">
                     <div class="layer">
                         <h3>Cross-Platform App Development for Mental Health Issues</h3>
@@ -196,8 +266,9 @@
                         </a>
                     </div>
                 </div>
+
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="#" class="btn" id="seeMoreBtn">See more</a>
         </div>
     </div>
 
@@ -287,6 +358,27 @@
                     msg.innerHTML = "Failed to send message.";
                 });
         })
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const seeMoreBtn = document.getElementById('seeMoreBtn');
+            const hiddenProjects = document.querySelectorAll('.hidden-projects');
+
+            // Hide hidden projects on page load
+            hiddenProjects.forEach(project => {
+                project.style.display = 'none';
+            });
+
+            seeMoreBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const isHidden = hiddenProjects[0].style.display === 'none' || hiddenProjects[0].style.display === '';
+                hiddenProjects.forEach(project => {
+                    project.style.display = isHidden ? 'block' : 'none';
+                });
+                seeMoreBtn.textContent = isHidden ? 'See less' : 'See more';
+            });
+        });
     </script>
 
 </body>

@@ -24,11 +24,7 @@ body {
 
 .container {
     padding: 10px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
 
 nav {
     position: sticky;
@@ -56,7 +52,6 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
     position: relative;
 }
 

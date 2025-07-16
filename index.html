@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalpa Das Portfolio</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!--     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -13,22 +13,21 @@
 </head>
 
 <body>
-    <nav>
-        <div class="container">
-            <img src="images/logo-kd-r.png" class="logo" alt="Kalpa Das Logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </div>
-    </nav>
+
     <div id="header">
         <div class="container">
+            <nav>
+                <img src="images/logo-kd-r.png" class="logo" alt="Kalpa Das Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
             <div class="header-text">
                 <p>Full Stack Web Developer</p>
                 <h1>Hi, I'm <span>Kalpa Das</span><br> from Kolkata,India</h1>
@@ -58,7 +57,6 @@
                         <p class="tab-links" onclick="openTab('experience')">Experience</p>
                         <p class="tab-links" onclick="openTab('education')">Education</p>
                     </div>
-
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Web Development</span><br>
@@ -97,6 +95,8 @@
                             <li><span>2023 Smart India Hackathon</span>
                                 <p>Cross-platform App Development for Mental Health Issues</p>
                             </li>
+                            
+
                         </ul>
                     </div>
 
@@ -114,8 +114,8 @@
             </div>
         </div>
     </div>
-<!-- about section ends -->
 
+    <!-- about section ends -->
 
     <!-- ----------services section starts---------- -->
     <div id="services">
@@ -149,6 +149,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- ----------services section ends---------- -->
 
 
@@ -224,69 +226,6 @@
                 <div class="work hidden-projects">
                     <img src="images/work-1.png">
                     <div class="layer">
-                        <h3>Live Stream Analytics Dashboard</h3>
-                        <p>A modern web application for analyzing live stream data with real-time metrics and visualizations.
-                        Features:
-                        <ul>
-                            <li>Real-time stream analytics</li>
-                            <li>Interactive dashboards</li>
-                            <li>Dark/Light mode support</li>
-                            <li>Responsive design</li>
-                            <li>Modern UI components</li>
-                        </ul>
-                        </p>
-                        <a href="https://github.com/kalpadas599/Real-time-analysis-BI" target="_blank">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Beyond QWERTY: Form Filling's Vernacular Voyage with Voice Versatility!</h3>
-                        <p><strong>Problems in Traditional Form Filling:</strong></p>
-                        <ul>
-                            <li>Time-consuming and error-prone process</li>
-                            <li>Typing difficulties for non-tech users, elderly and differently-abled individuals</li>
-                            <li>Language barriers hinder vernacular users</li>
-                        </ul>
-                        <p><strong>Our Solution:</strong></p>
-                        <ul>
-                            <li>Voice-Enabled Form Filling – Users can speak instead of typing, making the process faster and more convenient.</li>
-                            <li>AI-Powered Error Correction – NLP ensures accurate text input, reducing mistakes.</li>
-                            <li>User-Friendly Interface – Simple and intuitive UI for easy navigation.</li>
-                        </ul>
-                        <a href="https://github.com/kalpadas599/Beyond_QWERTY_Project" target="_blank">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="work">
-                    <img src="images/work-3.png">
-                    <div class="layer">
-                        <h3>Event Organising Website</h3>
-                        <p>It's a collection of services-list. It's time to enjoy! The best event planning for you and your family.
-                        Our Services Include:
-                        <ul>
-                            <li>Assistance in Venue Selection</li>
-                            <li>Customizable invitation cards</li>
-                            <li>Music, performances etc. option</li>
-                            <li>Catering services available</li>
-                            <li>Cakes for special occasions</li>
-                            <li>Photo and video coverage</li>
-                        </ul>
-                        </p>
-                        <a href="https://github.com/kalpadas599/Event-Organising-website" target="_blank">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </div>
-                </div>   
-
-                <div class="work hidden-projects">
-                    <img src="images/work-4.jpg">
-                    <div class="layer">
                         <h3>Scholarship Website and disbursement platform</h3>
                         <p>Engineered a scholarship aggregation platform utilizing the MERN stack, which streamlined user navigation and increased page load 
                             speed by 30%, enhancing overall user experience during high traffic periods. 
@@ -332,14 +271,16 @@
             <a href="#" class="btn" id="seeMoreBtn">See more</a>
         </div>
     </div>
+
     <!-- portfolio sections ends -->
+
 
     <!-- contact section starts -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Let’s Connect</h1>
+                    <h1 class="sub-title">Message Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>kalpadas599@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>+91 62902 71947</p>
                     <div class="social-icons">
@@ -348,7 +289,7 @@
                         <a href="https://www.linkedin.com/in/kalpadas/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/kalpadas599" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="images/KalpaDas_FullStackResume_2025.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/my-cv-kd.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <!--<form action="https://formsubmit.co/kalpadas599@gmail.com" method="POST"> method 1 (using formsubmit) -->
@@ -366,6 +307,7 @@
             <p>Copyright © Kalpadas <i class="fa-solid fa-heart"></i> All Rights Reserved</p>
         </div>
     </div>
+
     <!-- contact section ends -->
 
 
@@ -439,5 +381,6 @@
         });
     </script>
 
+</body>
 
 </html>

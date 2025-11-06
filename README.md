@@ -14,7 +14,3 @@ This is Kalpa Das' portfolio website, a Full-Stack Web Developer and AI enthusia
 
 
 
-
-
-
-

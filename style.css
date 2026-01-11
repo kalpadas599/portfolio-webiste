@@ -17,7 +17,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/backgroundme.jpg);
+    background-image: url(images/BG_IMG_Laptop.png);
     background-size: cover;
     background-position: center;
 }
@@ -31,12 +31,12 @@ nav {
     top: 0;
     z-index: 1000;
     width: 80%;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 
 .logo {
@@ -80,16 +80,17 @@ nav ul li a:hover::after {
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
-    
+
 }
 
 @keyframes slideIn {
-  from {
-    transform: translateX(20%);
-  }
-  to {
-    transform: translateX(0);
-  }
+    from {
+        transform: translateX(20%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 .header-text h1 span {
@@ -173,6 +174,121 @@ nav ul li a:hover::after {
     display: block;
 }
 
+
+/* ------------------tech stack section starts----------*/
+#tech-stack {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.tech-intro {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #ababab;
+}
+
+.tech-category {
+    margin-bottom: 50px;
+}
+
+.category-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff004f;
+    display: inline-block;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+
+.tech-item {
+    background: #262626;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.tech-item:hover {
+    background: #1a1a1a;
+    transform: translateY(-10px);
+    border-color: #ff004f;
+    box-shadow: 0 10px 30px rgba(255, 0, 79, 0.3);
+}
+
+.tech-item i {
+    font-size: 50px;
+    color: #ff004f;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover i {
+    transform: scale(1.2);
+}
+
+.tech-item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+/* Responsive adjustments for tech stack */
+@media (max-width: 768px) {
+    .tech-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .tech-item {
+        padding: 20px 15px;
+    }
+
+    .tech-item i {
+        font-size: 40px;
+    }
+
+    .tech-item p {
+        font-size: 14px;
+    }
+
+    .category-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tech-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+    }
+
+    .tech-item {
+        padding: 15px 10px;
+    }
+
+    .tech-item i {
+        font-size: 35px;
+    }
+
+    .tech-item p {
+        font-size: 12px;
+    }
+}
+
+/* ------------------tech stack section ends----------*/
 
 /* ------------------services section starts----------*/
 #services {
@@ -420,6 +536,7 @@ nav .fa-solid {
     .header-text h1 {
         font-size: 2rem;
     }
+
     .header-text p {
         font-size: 1rem;
     }
@@ -427,7 +544,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(images/phone-backgroundkd.jpg);
+        background-image: url(images/BG_Mobile_KD.png);
     }
 
     .header-text {

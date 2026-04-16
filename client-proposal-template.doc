@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Website Development Proposal</title>
+  <style>
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      line-height: 1.5;
+      margin: 36px;
+      color: #111;
+    }
+    h1, h2, h3, h4 {
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 22px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    h2 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    p {
+      margin: 6px 0;
+    }
+    ul {
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+    li {
+      margin: 3px 0;
+    }
+    .meta {
+      margin-bottom: 18px;
+    }
+    .package {
+      border: 1px solid #d9d9d9;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+    }
+    .footer-space {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Portfolio Website Development Proposal</h1>
+
+  <p class="meta"><b>Prepared By:</b> [Your Name]</p>
+  <p class="meta"><b>Date:</b> [Insert Date]</p>
+  <p class="meta"><b>Client Name:</b> [Insert Client Name]</p>
+
+  <h2>1. Project Overview</h2>
+  <p>
+    This proposal outlines the scope, timeline, and pricing for building a professional portfolio website
+    to showcase your work, achievements, and contact details.
+  </p>
+
+  <h2>2. Scope of Work</h2>
+  <ul>
+    <li>Home Page (Introduction)</li>
+    <li>About Section (Background)</li>
+    <li>Projects / Work Showcase</li>
+    <li>Skills / Services Section</li>
+    <li>Contact Form (Google Sheet integration optional)</li>
+    <li>Mobile-Friendly Responsive Layout</li>
+    <li>Deployment (website live on internet)</li>
+  </ul>
+
+  <h2>3. Pricing Packages</h2>
+
+  <div class="package">
+    <p><b>BASIC - INR 15,000</b></p>
+    <ul>
+      <li>Up to 3 pages</li>
+      <li>Simple professional design</li>
+      <li>Mobile responsive</li>
+      <li>Contact form</li>
+      <li>Deployment</li>
+    </ul>
+    <p><b>Timeline:</b> 4-5 working days</p>
+  </div>
+
+  <div class="package">
+    <p><b>STANDARD - INR 25,000</b></p>
+    <ul>
+      <li>Up to 5 pages</li>
+      <li>Custom design</li>
+      <li>Animations / interactions</li>
+      <li>Basic SEO setup</li>
+      <li>Deployment</li>
+    </ul>
+    <p><b>Timeline:</b> 7-10 working days</p>
+  </div>
+
+  <div class="package">
+    <p><b>PREMIUM - INR 40,000</b></p>
+    <ul>
+      <li>Fully custom design</li>
+      <li>Advanced UI and interactions</li>
+      <li>Content update support / CMS</li>
+      <li>SEO optimization</li>
+      <li>1 month maintenance</li>
+    </ul>
+    <p><b>Timeline:</b> 12-15 working days</p>
+  </div>
+
+  <h2>4. Optional Services</h2>
+  <ul>
+    <li>Maintenance: INR 3,000/month</li>
+    <li>Extra pages: INR 2,000/page</li>
+    <li>Domain/Hosting setup: INR 2,000</li>
+  </ul>
+
+  <h2>5. Payment Terms</h2>
+  <ul>
+    <li>50% advance before project start</li>
+    <li>50% before final handover</li>
+  </ul>
+
+  <h2>6. Revision Policy</h2>
+  <ul>
+    <li>Up to 2 rounds of revisions included</li>
+    <li>Additional revisions may be charged</li>
+  </ul>
+
+  <h2>7. Client Responsibilities</h2>
+  <ul>
+    <li>Provide content (text, images, branding details)</li>
+    <li>Provide timely review and feedback</li>
+    <li>Approve final output for launch</li>
+  </ul>
+
+  <h2>8. Acceptance</h2>
+  <p>Client Name: ______________________________</p>
+  <p>Signature: ________________________________</p>
+  <p>Date: ____________________________________</p>
+
+  <p class="footer-space">Thank you for considering this proposal.</p>
+</body>
+</html>

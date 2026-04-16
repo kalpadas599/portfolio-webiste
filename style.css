@@ -37,6 +37,11 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 
+    background: rgba(0, 0, 0, 0.8);  /* slightly transparent */
+    backdrop-filter: blur(10px);     /* modern glass effect */
+    padding: 6px 12px;
+    border-radius: 16px; 
+
 }
 
 .logo {
@@ -47,6 +52,55 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+}
+
+/* Mode Toggle Styling */
+.mode-toggle-container {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.mode-toggle {
+    width: 65px;
+    height: 32px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    transition: all 0.3s ease;
+    border: 2px solid #ff004f;
+}
+
+.toggle-icon {
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+}
+
+.toggle-switch {
+    width: 24px;
+    height: 24px;
+    background: #ff004f;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 0 10px rgba(255, 0, 79, 0.5);
+}
+
+.mode-toggle:hover {
+    box-shadow: 0 0 15px rgba(255, 0, 79, 0.3);
+}
+
+/* States */
+.mode-toggle.active .toggle-switch {
+    transform: translateX(31px);
+    background: #fff;
 }
 
 nav ul li a {

@@ -25,6 +25,14 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <!-- Freelance Toggle -->
+                    <li class="mode-toggle-container">
+                        <div class="mode-toggle" id="freelanceToggle">
+                            <span class="toggle-icon"><i class="fa-solid fa-user"></i></span>
+                            <div class="toggle-switch"></div>
+                            <span class="toggle-icon"><i class="fa-solid fa-briefcase"></i></span>
+                        </div>
+                    </li>
                     <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -670,7 +678,7 @@
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzj3RyY5Y99I9Rj676241ipH97vQ_2xRJ0GzXR7JnZKLR31e1bnB1iXnhnK9um4Sj1CYg/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLuswz_e6CK_IZyo898X-G1E4wWq50iIoBYFHpF4Sr9Ta5YNW9q-hYTVLDx_BRRQhV9Q/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
 
@@ -709,6 +717,16 @@
                 });
                 seeMoreBtn.textContent = isHidden ? 'See less' : 'See more';
             });
+        });
+    </script>
+
+    <script>
+        // Freelance Toggle logic
+        document.getElementById('freelanceToggle').addEventListener('click', function() {
+            this.classList.add('active');
+            setTimeout(() => {
+                window.location.href = 'freelance.html';
+            }, 300);
         });
     </script>
 

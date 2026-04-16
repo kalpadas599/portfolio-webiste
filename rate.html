@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate My Work | Kalpa Das</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="freelance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        .rate-container {
+            max-width: 600px;
+            margin: 100px auto;
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid var(--primary-color);
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.1);
+        }
+
+        .star-rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 40px;
+            color: #444;
+            cursor: pointer;
+            transition: color 0.2s;
+            margin: 0 5px;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover ~ label,
+        .star-rating input:checked ~ label {
+            color: #ffcc00;
+        }
+
+        .rate-form textarea {
+            width: 100%;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        .rate-form textarea:focus {
+            border-color: var(--primary-color);
+        }
+
+        .success-msg {
+            display: none;
+            color: var(--primary-color);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rate-container">
+            <h1 class="sub-title" style="font-size: 30px;">Rate My Services</h1>
+            <p>Your feedback helps me grow and helps others trust my work.</p>
+
+            <form class="rate-form" id="ratingForm">
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="Rating" value="5" required /><label for="star5"
+                        title="5 stars"><i class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="star4" name="Rating" value="4" /><label for="star4" title="4 stars"><i
+                            class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="star3" name="Rating" value="3" /><label for="star3" title="3 stars"><i
+                            class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="star2" name="Rating" value="2" /><label for="star2" title="2 stars"><i
+                            class="fa-solid fa-star"></i></label>
+                    <input type="radio" id="star1" name="Rating" value="1" /><label for="star1" title="1 star"><i
+                            class="fa-solid fa-star"></i></label>
+                </div>
+
+                <input type="text" name="ClientName" placeholder="Your Name / Business" required
+                    style="width: 100%; background: #1a1a1a; border: 1px solid #333; color: #fff; padding: 15px; border-radius: 10px; margin-bottom: 20px; outline: none;">
+
+                <textarea name="Review" rows="5" placeholder="Write a short review of our project..."></textarea>
+
+                <button type="submit" class="btn btn2" style="width: 100%;">Submit Rating</button>
+            </form>
+
+            <div id="successMsg" class="success-msg">
+                <i class="fa-solid fa-circle-check" style="font-size: 40px; margin-bottom: 20px;"></i>
+                <h2>Thank you for your feedback!</h2>
+                <p>Returning to portfolio...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLuswz_e6CK_IZyo898X-G1E4wWq50iIoBYFHpF4Sr9Ta5YNW9q-hYTVLDx_BRRQhV9Q/exec';
+        const form = document.getElementById('ratingForm');
+        const successMsg = document.getElementById('successMsg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const submitBtn = form.querySelector('button');
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Submitting...';
+
+            // Add timestamp
+            const formData = new FormData(form);
+            formData.append('Timestamp', new Date().toISOString());
+            formData.append('Type', 'Rating'); // To distinguish from contact form in the same script
+
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(response => {
+                    form.style.display = 'none';
+                    successMsg.style.display = 'block';
+                    setTimeout(() => {
+                        window.location.href = 'freelance.html';
+                    }, 3000);
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = 'Submit Rating';
+                    alert('Submission failed. Please try again.');
+                });
+        });
+    </script>
+</body>
+
+</html>

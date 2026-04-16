@@ -31,9 +31,9 @@
                             <div class="toggle-switch"></div>
                         </div>
                     </li>
-                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <i class="fa-solid fa-xmark"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <i class="fa-solid fa-bars"></i>
             </nav>
             <div class="header-text">
                 <p>Full Stack Web Developer</p>
@@ -665,12 +665,34 @@
 
     <script>
         var sidemenu = document.getElementById("sidemenu");
-        document.querySelector('.fa-bars').addEventListener('click', () => {
-            sidemenu.style.right = "0";
-        });
+        var openMenuBtn = document.querySelector("nav .fa-bars");
+        var closeMenuBtn = document.querySelector("#sidemenu .fa-xmark");
 
-        document.querySelector('.fa-xmark').addEventListener('click', () => {
-            sidemenu.style.right = "-200px";
+        function hideSideMenu() {
+            if (!sidemenu) return;
+            sidemenu.classList.remove("menu-open");
+        }
+
+        function showSideMenu() {
+            if (!sidemenu) return;
+            sidemenu.classList.add("menu-open");
+        }
+
+        if (openMenuBtn) {
+            openMenuBtn.addEventListener('click', showSideMenu);
+        }
+
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', hideSideMenu);
+        }
+
+        // Backward compatibility if any inline handlers still call these.
+        window.showMenu = showSideMenu;
+        window.hideMenu = hideSideMenu;
+
+        window.addEventListener('resize', hideSideMenu);
+        document.addEventListener('DOMContentLoaded', () => {
+            requestAnimationFrame(hideSideMenu);
         });
 
     </script>

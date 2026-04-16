@@ -7,12 +7,12 @@ const closeMenu = document.getElementById("closeMenu");
 
 function hideSideMenu() {
     if (!sidemenu) return;
-    sidemenu.style.right = `-${sidemenu.offsetWidth}px`;
+    sidemenu.classList.remove("menu-open");
 }
 
 if (openMenu) {
     openMenu.addEventListener("click", () => {
-        sidemenu.style.right = "0";
+        sidemenu.classList.add("menu-open");
     });
 }
 

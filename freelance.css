@@ -553,14 +553,48 @@ body {
     }
 
     #freelance-nav ul {
-        width: 220px;
-        right: -220px;
+        background: rgba(8, 11, 18, 0.96) !important;
+        backdrop-filter: blur(8px);
+        position: fixed;
+        inset: 0;
+        width: 100vw;
         height: 100vh;
-        padding-top: 56px;
+        padding: 90px 28px 40px;
+        z-index: 2000;
+        overflow-y: auto;
+        overflow-x: hidden;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate3d(0, -12px, 0);
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    }
+
+    #freelance-nav ul.menu-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate3d(0, 0, 0);
     }
 
     #freelance-nav ul li {
-        margin: 22px;
+        display: block;
+        margin: 22px 0;
+    }
+
+    #freelance-nav ul li a {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+    }
+
+    #freelance-nav ul .fa-solid {
+        position: absolute;
+        top: 24px;
+        right: 22px;
+        left: auto;
+        font-size: 30px;
+        cursor: pointer;
     }
 
     .sub-title {

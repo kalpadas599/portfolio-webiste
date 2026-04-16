@@ -5,6 +5,11 @@ const sidemenu = document.getElementById("sidemenu");
 const openMenu = document.getElementById("openMenu");
 const closeMenu = document.getElementById("closeMenu");
 
+function hideSideMenu() {
+    if (!sidemenu) return;
+    sidemenu.style.right = `-${sidemenu.offsetWidth}px`;
+}
+
 if (openMenu) {
     openMenu.addEventListener("click", () => {
         sidemenu.style.right = "0";
@@ -13,9 +18,12 @@ if (openMenu) {
 
 if (closeMenu) {
     closeMenu.addEventListener("click", () => {
-        sidemenu.style.right = "-200px";
+        hideSideMenu();
     });
 }
+
+window.addEventListener("resize", hideSideMenu);
+document.addEventListener("DOMContentLoaded", hideSideMenu);
 
 // Toggle Back to Personal Portfolio
 const personalToggle = document.getElementById("personalToggle");

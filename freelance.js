@@ -22,6 +22,12 @@ if (closeMenu) {
     });
 }
 
+if (sidemenu) {
+    sidemenu.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", hideSideMenu);
+    });
+}
+
 window.addEventListener("resize", hideSideMenu);
 document.addEventListener("DOMContentLoaded", hideSideMenu);
 
@@ -29,6 +35,7 @@ document.addEventListener("DOMContentLoaded", hideSideMenu);
 const personalToggle = document.getElementById("personalToggle");
 if (personalToggle) {
     personalToggle.addEventListener("click", function() {
+        hideSideMenu();
         this.classList.remove("active");
         setTimeout(() => {
             window.location.href = "index.html";

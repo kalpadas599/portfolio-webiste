@@ -22,11 +22,9 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    min-height: 100svh;
     background-image: url(images/BG_IMG_Laptop.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 .container {
@@ -593,84 +591,6 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
-    #header nav .fa-solid {
-        display: block;
-        font-size: 25px;
-    }
-
-    #header nav {
-        position: fixed;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #header nav > .fa-bars {
-        position: absolute;
-        top: 10px;
-        right: 16px;
-        font-size: 27px;
-        z-index: 2102;
-        cursor: pointer;
-    }
-
-    #header nav ul {
-        background: rgba(8, 11, 18, 0.96);
-        backdrop-filter: blur(8px);
-        position: fixed;
-        inset: 0;
-        width: 100vw;
-        height: 100dvh;
-        min-height: 100vh;
-        padding: 90px 28px 40px;
-        z-index: 2000;
-        overflow-y: auto;
-        overflow-x: hidden;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transform: translate3d(0, -12px, 0);
-        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
-    }
-
-    #header nav ul.menu-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        transform: translate3d(0, 0, 0);
-    }
-
-    #header nav ul.menu-open + .fa-bars {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
-
-    #header nav ul li {
-        display: block;
-        margin: 22px 0;
-    }
-
-    #header nav ul li a {
-        font-size: 28px;
-        font-weight: 600;
-        letter-spacing: 0.2px;
-    }
-
-    #header nav ul .fa-solid {
-        position: absolute;
-        top: 24px;
-        left: 22px;
-        right: auto;
-        font-size: 30px;
-        color: #fff;
-        line-height: 1;
-        z-index: 2101;
-        cursor: pointer;
-    }
-}
-
 @media (max-width: 768px) {
     .header-text h1 {
         font-size: 2rem;
@@ -693,6 +613,56 @@ nav .fa-solid {
 
     .header-text h1 {
         font-size: 30px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: rgba(8, 11, 18, 0.96);
+        backdrop-filter: blur(8px);
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 90px 28px 40px;
+        z-index: 2000;
+        overflow-y: auto;
+        overflow-x: hidden;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate3d(0, -12px, 0);
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    }
+
+    #header nav ul.menu-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate3d(0, 0, 0);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 22px 0;
+    }
+
+    #header nav ul li a {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 24px;
+        right: 22px;
+        left: auto;
+        font-size: 30px;
+        cursor: pointer;
     }
 
     .sub-title {

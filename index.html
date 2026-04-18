@@ -686,6 +686,16 @@
             closeMenuBtn.addEventListener('click', hideSideMenu);
         }
 
+        if (sidemenu) {
+            sidemenu.querySelectorAll('a[href^="#"]').forEach((link) => {
+                link.addEventListener('click', hideSideMenu);
+            });
+
+            sidemenu.querySelectorAll('.mode-toggle').forEach((toggle) => {
+                toggle.addEventListener('click', hideSideMenu);
+            });
+        }
+
         // Backward compatibility if any inline handlers still call these.
         window.showMenu = showSideMenu;
         window.hideMenu = hideSideMenu;
@@ -743,6 +753,9 @@
     <script>
         // Freelance Toggle logic
         document.getElementById('freelanceToggle').addEventListener('click', function() {
+            if (window.hideMenu) {
+                window.hideMenu();
+            }
             this.classList.add('active');
             setTimeout(() => {
                 window.location.href = 'freelance.html';

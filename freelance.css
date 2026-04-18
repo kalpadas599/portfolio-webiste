@@ -591,8 +591,8 @@ body {
     #freelance-nav ul .fa-solid {
         position: absolute;
         top: 24px;
-        right: 22px;
-        left: auto;
+        left: 22px;
+        right: auto;
         font-size: 30px;
         cursor: pointer;
     }

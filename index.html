@@ -26,10 +26,13 @@
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <!-- Freelance Toggle -->
-                    <li class="mode-toggle-container">
-                        <div class="mode-toggle" id="freelanceToggle">
-                            <div class="toggle-switch"></div>
-                        </div>
+                    <li class="mode-toggle-container dev-active" aria-label="Site mode switch">
+                        <span class="mode-label mode-label-dev">Developer</span>
+                        <button class="mode-toggle" id="freelanceToggle" type="button"
+                            aria-label="Switch to Freelancer Mode" aria-pressed="false" title="Switch to Freelancer Mode">
+                            <span class="toggle-switch"></span>
+                        </button>
+                        <span class="mode-label mode-label-freelance">Freelancer</span>
                     </li>
                     <i class="fa-solid fa-xmark"></i>
                 </ul>

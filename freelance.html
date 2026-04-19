@@ -25,10 +25,13 @@
                     <li><a href="#ratings">Ratings</a></li>
                     <li><a href="#contact">Get Quote</a></li>
                     <!-- Freelance Toggle (Active) -->
-                    <li class="mode-toggle-container">
-                        <div class="mode-toggle active" id="personalToggle">
-                            <div class="toggle-switch"></div>
-                        </div>
+                    <li class="mode-toggle-container freelance-active" aria-label="Site mode switch">
+                        <span class="mode-label mode-label-dev">Developer</span>
+                        <button class="mode-toggle active" id="personalToggle" type="button"
+                            aria-label="Switch to Developer Mode" aria-pressed="true" title="Switch to Developer Mode">
+                            <span class="toggle-switch"></span>
+                        </button>
+                        <span class="mode-label mode-label-freelance">Freelancer</span>
                     </li>
                     <i class="fa-solid fa-xmark" id="closeMenu"></i>
                 </ul>

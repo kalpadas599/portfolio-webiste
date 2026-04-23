@@ -39,25 +39,8 @@ The top navigation now includes a clear mode switch with labels:
 - Google Apps Script
 
 ## Author
-
 Kalpa Das  
 Full Stack Web Developer | AI Enthusiast
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

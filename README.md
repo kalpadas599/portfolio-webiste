@@ -1,7 +1,6 @@
 
 # Personal Portfolio
 
-
 This repository contains Kalpa Das' portfolio website with two user-facing modes:
 
 - Developer Mode: personal portfolio, skills, projects, and contact.
